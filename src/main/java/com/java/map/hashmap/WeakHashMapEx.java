@@ -21,10 +21,11 @@ public class WeakHashMapEx {
         System.out.println("after: hashmap "+hashMap.get("hello")+" weakHashmap: "+weakhashMap.get("hii"));
         Map<Integer,String> map=new HashMap<>();
         Map<Integer,String> map1=new WeakHashMap<>();
-        map.put(1,"hash");
-        map1.put(1,"weak");
+        Integer int1=new Integer(1);
+        Integer int11=new Integer(2);
+
         System.out.println(map.get(1));
-        System.out.println(map1.get(1));
+        System.out.println(map1.get(2));
         System.out.println("=======================");
         Set<Integer> key1=map.keySet();
         Set<Integer> key2=map1.keySet();
